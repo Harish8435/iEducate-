@@ -1,0 +1,12 @@
+#For public git repository, on git bash
+
+touch .gitignore
+git config --global user.name "Learner Harry"
+git config --global user.email "harishparmar4884@gmail.com"
+git init
+git add .
+git commit -m "Initial Commit"
+git status #just to see
+
+git remote add origin <ssh url.git>
+git push origin master
