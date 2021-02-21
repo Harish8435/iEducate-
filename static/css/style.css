@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Cinzel:wght@500&family=Iceland&family=Port+Lligat+Slab&family=Sirin+Stencil&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    font-family: 'Alegreya SC', serif;
+}
+
+.nav-list{
+    width: 60%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list .logo{
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list .logo img{
+    width: 32%;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin: 4px 0px;
+    transition: transform .4s;
+}
+.nav-list .logo img:hover{
+    transform: scale(1.1);
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 16px 22px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+.nav-list li a:hover{
+    color: rgb(159, 165, 165);
+}
+
+.rightNav{
+    width: 40%;
+    /* background-color: brown; */
+    text-align: right;
+    margin: 0 16px;
+}
+
+#search{
+    padding: 4px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    width: 36%;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.6) url('../img/bg1.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.big{
+    font-size: 48px;
+    text-align: center;
+    color: wheat;
+}
+
+.small{
+    font-size: 26px;
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    margin: auto;
+    max-width: 74%;
+    height: 75%;
+    font-family: 'Iceland', cursive;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.firstHalf {
+    width: 80%;
+    border: 1px solid white;
+    border-bottom-left-radius: 44px;
+    border-top-right-radius: 44px;
+    background-color: #1f1a1a;
+}
+
+.secondHalf{
+    width: 30%;
+    margin-left: 40px;
+}
+
+.secondHalf img{
+    width: 248px;
+    border: 2px solid white;
+    border-radius: 16px;
+    display: block;
+    margin: auto;
+    transition: transform .4s;
+}
+
+.secondHalf img:hover{
+    transform: scale(1.1);
+}
+
+#home{
+    height: 664px;
+}
+
+#about{
+    background: rgba(0, 0, 0, 0.6) url('https://source.unsplash.com/244x244/?dark,background') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#services{
+    padding-top: 68px;
+}
+
+.heading{
+    background: rgba(0, 0, 0, 0.6) url('../img/bg.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Alegreya SC', serif;
+    font-size: 3rem;
+}
+
+.text-big{
+    font-size: 40px;
+    color: white;
+}
+
+.text-big a{
+    color: white;
+}
+
+.text-small{
+    font-size: 18px;
+}
+
+.btn{
+    padding: 6px 16px;
+    margin: 8px 4px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    background: none;
+    color: white;
+    outline: none;
+}
+
+.btn a{
+    font-family: 'Sirin Stencil', cursive;
+}
+
+.btn:hover{
+    background-color: #cebbbb;
+}
+
+.btn a{
+    text-decoration: none;
+    list-style: none;
+    color: White;
+}
+
+.btn-sm{
+    padding: 3px 8px;
+    vertical-align: middle;
+}
+
+.btn-dark{
+    color: white;
+    border: 2px solid white;
+    font-family: 'Sirin Stencil', cursive;
+    font-size: 20px;
+    transition: transform .4s;
+}
+
+.btn-dark:hover{
+    color: white;
+    background-color: #524c4c;
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    color: wheat;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 12px;
+    padding-top: 44px;
+}
+
+.section img{
+    height: 44%;
+    transition: transform .4s;
+}
+
+.section img:hover{
+    transform: scale(1.1);
+}
+
+.paras{
+    padding: 0 64px;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.sectionTag{
+    padding: 16px 0;
+    font-family: 'Cinzel', serif;
+}
+
+.sectionSubTag{ 
+    font-family: 'Port Lligat Slab', serif;
+}
+
+.thumbnail img{
+    width: 224px;
+    border: 2px solid black;
+    border-radius: 24px;
+    margin-top: 46px;
+}
+
+.sec1{
+    background: rgba(0, 0, 0, 0.6) url('https://source.unsplash.com/244x244/?dark,background,html,css,javascript') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.sec2{
+    background: rgba(0, 0, 0, 0.6) url('https://source.unsplash.com/244x244/?dark,background,android,xml') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.sec3{
+    background: rgba(0, 0, 0, 0.6) url('https://source.unsplash.com/244x244/?dark,background,coding,c') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.sec4{
+    background: rgba(0, 0, 0, 0.6) url('https://source.unsplash.com/244x244/?dark,background,java,jvm') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.sec5{
+    background: rgba(0, 0, 0, 0.6) url('https://source.unsplash.com/244x244/?dark,background,data structures,algorithm') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.sec6{
+    background: rgba(0, 0, 0, 0.6) url('https://source.unsplash.com/244x244/?dark,background,python,django') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.sec7{
+    background: rgba(0, 0, 0, 0.6) url('https://source.unsplash.com/244x244/?dark,background,python coding') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.sec8{
+    background: rgba(0, 0, 0, 0.6) url('https://source.unsplash.com/244x244/?dark,background,backend javascript') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.sec9{
+    background: rgba(0, 0, 0, 0.6) url('https://source.unsplash.com/244x244/?dark,background,coding,c++') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.contact{
+    background-color: rgb(226 226 226);
+    height: 632px;
+    background: rgba(0, 0, 0, 0.6) url('../img/home.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.text-transform{
+    text-align: center;
+    padding-top: 18px;
+    font-family: 'Sirin Stencil', cursive;
+    font-size: 36px;
+    color: #cebbbb;
+}
+
+.form{
+    max-width: 800px;
+    margin: 12px auto;
+}
+
+.form-input{
+    width: 100%;
+    font-size: 22px;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 8px;
+    outline: none;
+    padding: 5px 14px;
+    font-family: 'Iceland', cursive;
+}
+
+.txt-footer{
+    color:white;
+    text-align: center;
+    padding: 18px 0;
+    
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 4%;
+}
+
+.line{
+    width: 32px;
+    background-color: white;
+    height: 4px;
+    margin: 6px 3px;
+}
