@@ -3,7 +3,8 @@ const app = express();
 const path = require('path');
 const bodyparser = require("body-parser");
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/Educate', {useNewUrlParser: true});
+
+mongoose.connect('mongodb+srv://Harry:Harry@cluster0.eyz71.mongodb.net/iEducate?retryWrites=true&w=majority', {useNewUrlParser: true});
 const port = 4080;
 
 //Define Mongoose Schema
@@ -31,7 +32,6 @@ app.post('/contact', (req, res)=>{
   }).catch(()=>{
       res.status(400).sendFile(path.join(__dirname + '/alert2.html'));
   });
-  // res.status(200).render('contact.pug');
 })
 
 // START THE SERVER
